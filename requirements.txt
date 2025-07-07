@@ -1,5 +1,6 @@
 streamlit
 streamlit-lottie
 geopy
-tensorflow
+tensorflow==2.12.0
+
 
