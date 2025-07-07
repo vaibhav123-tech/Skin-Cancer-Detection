@@ -2,36 +2,41 @@
 
 [Live Site](https://skin-cancer-check.streamlit.app/)
 
-## Running
+![App Screenshot](image.png)   
 
-1. Create a virtual environment
+# Diagnose.AI 🧬🔬
 
-    ```bash
-    python3 -m venv venv
-    ```
+Diagnose.AI is a deep learning powered web app for detecting 9 different types of skin lesions (including melanoma) from images. Built using TensorFlow and Streamlit.
 
-1. Activate the virtual environment
+## 🚀 Features
+- Predict the type of skin lesion
+- 9-class classification including:
+  - Actinic keratosis
+  - Basal cell carcinoma
+  - Dermatofibroma
+  - Melanoma
+  - Nevus
+  - Pigmented benign keratosis
+  - Seborrheic keratosis
+  - Squamous cell carcinoma
+  - Vascular lesion
 
-    for Linux and Mac:
+## 🖥️ Technologies Used
+- TensorFlow / Keras
+- Streamlit
+- Python
+- PIL
 
-    ```bash
-    source venv/bin/activate
-    ```
+## 🧠 How It Works
+1. Load trained CNN model (`model.h5`)
+2. Preprocess uploaded image to 180x180
+3. Predict probabilities using `softmax`
+4. Show predicted class and confidence
 
-    for Windows:
+## 🛠️ Setup Instructions
 
-    ```bash
-    venv\Scripts\activate
-    ```
-
-1. Install dependencies
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-1. Run the app
-
-    ```bash
-    streamlit run ./About.py
-    ```
+```bash
+git clone https://github.com/vaibhav123-tech/skin-cancer-detection.git
+cd skin-cancer-detection
+pip install -r requirements.txt
+streamlit run About.py
